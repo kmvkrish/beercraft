@@ -1,0 +1,33 @@
+{
+    "name": "beercraft",
+    "version": "1.0.0",
+    "description": "A front-end app that lists all beers and provides user to add it to cart.",
+    "main": "\"\"",
+    "scripts": {
+        "build": "./node_modules/.bin/webpack -d",
+        "server": "http-server ./dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "\"\""
+    },
+    "keywords": [
+        "beercraft",
+        "reactjs",
+        "REST API"
+    ],
+    "author": "Krishna Manoj Varanasi",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^16.4.0",
+        "react-dom": "^16.4.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "webpack": "^4.9.1",
+        "webpack-cli": "^2.1.4"
+    }
+}

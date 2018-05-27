@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Beer Craft</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background: linear-gradient(to right, #87B9F0, #0A72E1);
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: 0;
+            padding-top: 70px;
+        }
+        
+        .beer p {
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+        }
+        
+        .beer a,
+        .beer a:hover {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .beer {
+            background: #fff;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 8px;
+            min-height: 250px;
+            max-height: 300px;
+        }
+        
+        .beer .beer-header {
+            padding: 5px;
+            height: auto;
+            max-height: 100px;
+        }
+        
+        .beer .beer-body {
+            padding: 5px;
+            min-height: 150px;
+        }
+        
+        .beer-footer {
+            padding: 5px;
+            height: 50px;
+        }
+        
+        .overflow {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .ellipsis {
+            text-overflow: ellipsis;
+        }
+        
+        .cart {
+            height: auto;
+            max-height: 480px;
+            -webkit-transition: box-shadow 0.5s ease;
+            transition: box-shadow 0.5s ease;
+            -moz-transition: box-shadow 0.5s ease;
+            -ms-transition: box-shadow 0.5s ease;
+            -o-transition: box-shadow 0.5s ease;
+            box-sizing: border-box;
+            padding: 0px;
+            border-radius: 0px;
+            max-width: 300px !important;
+            min-width: 300px !important;
+            overflow-y: auto;
+        }
+        
+        .cart:hover {
+            box-shadow: 0px 1px 10px #888888;
+        }
+        
+        .cart-header {
+            background: #fbfafa;
+            border: none;
+            padding: 10px;
+            border-bottom: 1px solid lightgrey;
+        }
+        
+        .cart-header>h4 {
+            font-size: 1.1em !important;
+            text-transform: uppercase !important;
+            color: black;
+        }
+        
+        .cart-body {
+            margin-bottom: 0px !important;
+            background: #fff;
+        }
+        
+        .cart-body>p.empty-cart {
+            text-align: center;
+            font-size: 16px;
+            color: lightgrey;
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+        
+        .cart-quantity-change-btn {
+            cursor: pointer;
+        }
+        
+        .cart-footer {
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        
+        .cart-button {
+            background: #e74c3c;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            float: right;
+        }
+        
+        .cart-button:hover {
+            color: #fff;
+            background: #e74c3c;
+        }
+        
+        .no-padding {
+            padding: 0;
+        }
+        
+        .cart-item-title {
+            font-size: 12px;
+        }
+        
+        .empty-bag {
+            padding-top: 85px;
+            text-align: center;
+        }
+        
+        .empty-bag-image {
+            height: 85px;
+            width: 85px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .cart-quantity {
+            padding: 10px;
+        }
+        
+        .is-processing {
+            height: 60px;
+            margin: 0px auto;
+            top: 45%;
+            position: absolute;
+            left: 40%;
+            color: purple;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="beercraft-container"></div>
+
+    <script src="/app.bundle.js"></script>
+
+    <!-- JQUery libs -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JQuery plugin -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
